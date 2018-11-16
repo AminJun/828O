@@ -1,11 +1,12 @@
 import numpy as np
 import tensorflow as tf
 import sys
-from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import scale
+import pandas as pd
 
 
 class Model:
-    def __init__(self, n=2, in_size=117000, out_size=3890):
+    def __init__(self, n=2, in_size=3890, out_size=115181):
         self.x = tf.placeholder(tf.float32, shape=[None, in_size])
         self.y = tf.placeholder(tf.float32, shape=[None, out_size])
 
@@ -25,21 +26,28 @@ class Model:
 
 
 class Trainer:
-    def __init__(self, n=2, normalize=False):
-        self.x, self.y = self.read(normalize)
+    def __init__(self, n=2, normalize=False, train_type='both'):
+        self.x, self.y = self.read(normalize, train_type)
         self.model = Model(n)
         self.normalize = normalize
 
-    def read(self, normalize=False):
-        import pdb
-        x = np.genfromtxt('NN-Data/{}'.format('Input_Layer.csv'), delimiter=',')[1:, 1:]
-        y = np.genfromtxt('NN-Data/{}'.format('Output_Layer.csv'), delimiter=',')[1:, 1:]
+    def read(self, normalize=False, train_type='both'):
+        x = pd.read_csv('NN-Data/{}'.format('Input_Layer.csv'), delimiter=',')[1:]
+        y = pd.read_csv('NN-Data/{}'.format('Output_Layer.csv'), delimiter=',')[1:]
+        index = x.values[:, 0]
+        sel = [i for i in range(len(index))]
+        if train_type is 'c':
+            sel = [i for i in range(len(index)) if 'TCGA' in index[i]]
+        if train_type is 'h':
+            sel = [i for i in range(len(index)) if 'GTEX' in index[i]]
+        x = np.array(x.values[sel, 1:])
+        y = np.array(y.values[sel, 1:])
         if normalize:
-            x = MinMaxScaler().transform(x)
+            x = scale(x)
         return x, y
 
-    def train(self, sess, epoch=1000, batch_size=2):
-        optimizer = tf.train.AdamOptimizer().minimize(self.model.loss)
+    def train(self, sess, epoch=10, batch_size=30):
+        optimizer = tf.train.AdamOptimizer(learning_rate=0.001).minimize(self.model.loss)
         sess.run(tf.global_variables_initializer())
         saver = tf.train.Saver()
         for epoch_i in range(epoch):
@@ -47,18 +55,19 @@ class Trainer:
             loss = 0
             for batch_i in range(num_batch):
                 batch_start = batch_i * batch_size
-                batch_x, batch_y = zip(self.x, self.y)[batch_start:batch_start + batch_size]
-                import pdb
-                pdb.set_trace()
+                batch_x = self.x[batch_start:batch_start + batch_size]
+                batch_y = self.y[batch_start:batch_start + batch_size]
                 _, c = sess.run([optimizer, self.model.loss], feed_dict={self.model.x: batch_x, self.model.y: batch_y})
                 loss += c
+                #print("#{} / {}".format(batch_i, num_batch))
             print("#{} : {}".format(epoch_i, loss))
-        saver.save(sess, "model{}{}".format(len(self.model.layers), self.normalize))
+        saver.save(sess, "./models/model_{}_{}_{}/model.ckpt".format(epoch, len(self.model.layers), self.normalize))
 
 
 if __name__ == '__main__':
     no_layers = int(sys.argv[1])
     do_normalize = sys.argv[2] == 'true'
-    trainer = Trainer(no_layers, do_normalize)
+    train_type = sys.argv[3]
+    trainer = Trainer(no_layers, do_normalize, train_type)
     with tf.Session() as c_sess:
         trainer.train(c_sess)

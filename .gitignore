@@ -5,6 +5,10 @@
 ### Fuck .idea ###
 .idea
 
+### Fuck unneeded data ###
+NN-Data
+models
+
 ### Linux ###
 *~
 
