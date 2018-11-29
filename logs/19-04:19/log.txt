@@ -1,0 +1,15 @@
+2018-11-19 10:38:57.186280: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-11-19 10:38:59.769101: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:06:00.0
+totalMemory: 10.91GiB freeMemory: 10.75GiB
+2018-11-19 10:38:59.769134: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2018-11-19 10:38:59.922747: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-11-19 10:38:59.922784: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2018-11-19 10:38:59.922790: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2018-11-19 10:38:59.923014: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10400 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:06:00.0, compute capability: 6.1)
+2018-11-19 10:38:59.980028: W tensorflow/core/framework/allocator.cc:122] Allocation of 1792216360 exceeds 10% of system memory.
+2018-11-19 10:39:00.402227: W tensorflow/core/framework/allocator.cc:122] Allocation of 1792216360 exceeds 10% of system memory.
+2018-11-19 10:39:00.818522: W tensorflow/core/framework/allocator.cc:122] Allocation of 1792216360 exceeds 10% of system memory.
+2018-11-19 10:39:01.234533: W tensorflow/core/framework/allocator.cc:122] Allocation of 1792216360 exceeds 10% of system memory.
+2018-11-19 10:39:01.857356: W tensorflow/core/framework/allocator.cc:122] Allocation of 1792216360 exceeds 10% of system memory.

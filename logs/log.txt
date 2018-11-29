@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/pandas/io/parsers.py", line 1848, in read
+    data = self._reader.read(nrows)
+  File "pandas/_libs/parsers.pyx", line 876, in pandas._libs.parsers.TextReader.read
+  File "pandas/_libs/parsers.pyx", line 891, in pandas._libs.parsers.TextReader._read_low_memory
+  File "pandas/_libs/parsers.pyx", line 968, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 1094, in pandas._libs.parsers.TextReader._convert_column_data
+  File "pandas/_libs/parsers.pyx", line 1134, in pandas._libs.parsers.TextReader._convert_tokens
+  File "pandas/_libs/parsers.pyx", line 1180, in pandas._libs.parsers.TextReader._convert_with_dtype
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/pandas/core/dtypes/common.py", line 811, in is_integer_dtype
+    def is_integer_dtype(arr_or_dtype):
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train.py", line 71, in <module>
+    trainer = Trainer(no_layers, do_normalize, train_type)
+  File "train.py", line 30, in __init__
+    self.x, self.y = self.read(normalize, train_type)
+  File "train.py", line 36, in read
+    y = pd.read_csv('NN-Data/{}'.format('Output_Layer.csv'), delimiter=',')[1:]
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/pandas/io/parsers.py", line 446, in _read
+    data = parser.read(nrows)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/pandas/io/parsers.py", line 1036, in read
+    ret = self._engine.read(nrows)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/pandas/io/parsers.py", line 1848, in read
+    data = self._reader.read(nrows)
+KeyboardInterrupt

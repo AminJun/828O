@@ -1,0 +1,142 @@
+2018-11-19 04:31:00.333585: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-11-19 04:31:02.277693: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:06:00.0
+totalMemory: 10.91GiB freeMemory: 356.38MiB
+2018-11-19 04:31:02.277728: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2018-11-19 04:31:02.434935: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-11-19 04:31:02.434977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2018-11-19 04:31:02.434983: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2018-11-19 04:31:02.435120: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 67 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:06:00.0, compute capability: 6.1)
+2018-11-19 04:31:02.492596: W tensorflow/core/framework/allocator.cc:122] Allocation of 1792216360 exceeds 10% of system memory.
+2018-11-19 04:31:02.910506: W tensorflow/core/framework/allocator.cc:122] Allocation of 1792216360 exceeds 10% of system memory.
+2018-11-19 04:31:03.355184: W tensorflow/core/framework/allocator.cc:122] Allocation of 1792216360 exceeds 10% of system memory.
+2018-11-19 04:31:03.771013: W tensorflow/core/framework/allocator.cc:122] Allocation of 1792216360 exceeds 10% of system memory.
+2018-11-19 04:31:04.376903: W tensorflow/core/framework/allocator.cc:122] Allocation of 1792216360 exceeds 10% of system memory.
+2018-11-19 04:31:28.559760: W tensorflow/core/common_runtime/bfc_allocator.cc:267] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.67GiB.  Current allocation summary follows.
+2018-11-19 04:31:28.559807: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (256): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559814: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (512): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559820: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (1024): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559824: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (2048): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559829: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (4096): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559834: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (8192): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559838: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (16384): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559843: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (32768): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559847: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (65536): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559851: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (131072): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559871: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (262144): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559892: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (524288): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559900: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (1048576): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559907: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (2097152): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559914: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (4194304): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559921: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (8388608): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559928: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (16777216): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559935: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (33554432): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559941: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (67108864): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559948: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (134217728): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559955: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (268435456): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2018-11-19 04:31:28.559965: I tensorflow/core/common_runtime/bfc_allocator.cc:613] Bin for 1.67GiB was 256.00MiB, Chunk State: 
+2018-11-19 04:31:28.559971: I tensorflow/core/common_runtime/bfc_allocator.cc:638]      Summary of in-use Chunks by size: 
+2018-11-19 04:31:28.559977: I tensorflow/core/common_runtime/bfc_allocator.cc:645] Sum Total of in-use chunks: 0B
+2018-11-19 04:31:28.559986: I tensorflow/core/common_runtime/bfc_allocator.cc:647] Stats: 
+Limit:                    70647808
+InUse:                           0
+MaxInUse:                        0
+NumAllocs:                       0
+MaxAllocSize:                    0
+
+2018-11-19 04:31:28.559993: W tensorflow/core/common_runtime/bfc_allocator.cc:271] <allocator contains no memory>
+2018-11-19 04:31:28.560023: W tensorflow/core/framework/op_kernel.cc:1250] OP_REQUIRES failed at constant_op.cc:75 : Resource exhausted: OOM when allocating tensor of shape [3890,115181] and type float
+2018-11-19 04:31:29.151629: E tensorflow/core/common_runtime/executor.cc:623] Executor failed to create kernel. Resource exhausted: OOM when allocating tensor of shape [3890,115181] and type float
+	 [[{{node Variable/Adam/Initializer/zeros}} = Const[dtype=DT_FLOAT, value=Tensor<type: float shape: [3890,115181] values: [0 0 0...]...>, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+Traceback (most recent call last):
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/client/session.py", line 1334, in _do_call
+    return fn(*args)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/client/session.py", line 1319, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/client/session.py", line 1407, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor of shape [3890,115181] and type float
+	 [[{{node Variable/Adam/Initializer/zeros}} = Const[dtype=DT_FLOAT, value=Tensor<type: float shape: [3890,115181] values: [0 0 0...]...>, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train.py", line 73, in <module>
+    trainer.train(c_sess)
+  File "train.py", line 51, in train
+    sess.run(tf.global_variables_initializer())
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/client/session.py", line 929, in run
+    run_metadata_ptr)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/client/session.py", line 1152, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/client/session.py", line 1328, in _do_run
+    run_metadata)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/client/session.py", line 1348, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor of shape [3890,115181] and type float
+	 [[node Variable/Adam/Initializer/zeros (defined at train.py:50)  = Const[dtype=DT_FLOAT, value=Tensor<type: float shape: [3890,115181] values: [0 0 0...]...>, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+
+Caused by op 'Variable/Adam/Initializer/zeros', defined at:
+  File "train.py", line 73, in <module>
+    trainer.train(c_sess)
+  File "train.py", line 50, in train
+    optimizer = tf.train.AdamOptimizer(learning_rate=0.00001).minimize(self.model.loss)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/training/optimizer.py", line 410, in minimize
+    name=name)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/training/optimizer.py", line 593, in apply_gradients
+    self._create_slots(var_list)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/training/adam.py", line 135, in _create_slots
+    self._zeros_slot(v, "m", self._name)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/training/optimizer.py", line 1139, in _zeros_slot
+    new_slot_variable = slot_creator.create_zeros_slot(var, op_name)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/training/slot_creator.py", line 183, in create_zeros_slot
+    colocate_with_primary=colocate_with_primary)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/training/slot_creator.py", line 157, in create_slot_with_initializer
+    dtype)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/training/slot_creator.py", line 65, in _create_slot_var
+    validate_shape=validate_shape)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/ops/variable_scope.py", line 1487, in get_variable
+    aggregation=aggregation)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/ops/variable_scope.py", line 1237, in get_variable
+    aggregation=aggregation)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/ops/variable_scope.py", line 540, in get_variable
+    aggregation=aggregation)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/ops/variable_scope.py", line 492, in _true_getter
+    aggregation=aggregation)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/ops/variable_scope.py", line 922, in _get_single_variable
+    aggregation=aggregation)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/ops/variables.py", line 183, in __call__
+    return cls._variable_v1_call(*args, **kwargs)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/ops/variables.py", line 146, in _variable_v1_call
+    aggregation=aggregation)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/ops/variables.py", line 125, in <lambda>
+    previous_getter = lambda **kwargs: default_variable_creator(None, **kwargs)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/ops/variable_scope.py", line 2444, in default_variable_creator
+    expected_shape=expected_shape, import_scope=import_scope)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/ops/variables.py", line 187, in __call__
+    return super(VariableMetaclass, cls).__call__(*args, **kwargs)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/ops/variables.py", line 1329, in __init__
+    constraint=constraint)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/ops/variables.py", line 1437, in _init_from_args
+    initial_value(), name="initial_value", dtype=dtype)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/ops/variable_scope.py", line 896, in <lambda>
+    shape.as_list(), dtype=dtype, partition_info=partition_info)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/ops/init_ops.py", line 101, in __call__
+    return array_ops.zeros(shape, dtype)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/ops/array_ops.py", line 1563, in zeros
+    output = fill(shape, constant(zero, dtype=dtype), name=name)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/ops/gen_array_ops.py", line 2979, in fill
+    "Fill", dims=dims, value=value, name=name)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/util/deprecation.py", line 488, in new_func
+    return func(*args, **kwargs)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/framework/ops.py", line 3274, in create_op
+    op_def=op_def)
+  File "/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/tensorflow/python/framework/ops.py", line 1770, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+ResourceExhaustedError (see above for traceback): OOM when allocating tensor of shape [3890,115181] and type float
+	 [[node Variable/Adam/Initializer/zeros (defined at train.py:50)  = Const[dtype=DT_FLOAT, value=Tensor<type: float shape: [3890,115181] values: [0 0 0...]...>, _device="/job:localhost/replica:0/task:0/device:GPU:0"]()]]
+

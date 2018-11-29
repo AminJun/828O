@@ -28,6 +28,7 @@ class Model:
 class Trainer:
     def __init__(self, n=2, normalize=False, train_type='both'):
         self.x, self.y = self.read(normalize, train_type)
+        self.mode = train_type
         self.model = Model(n)
         self.normalize = normalize
 
@@ -46,13 +47,15 @@ class Trainer:
             x = scale(x)
         return x, y
 
-    def train(self, sess, epoch=10, batch_size=30):
-        optimizer = tf.train.AdamOptimizer(learning_rate=0.001).minimize(self.model.loss)
+    def train(self, sess, epoch=2000, batch_size=30):
+        optimizer = tf.train.AdamOptimizer(learning_rate=0.00001).minimize(self.model.loss)
         sess.run(tf.global_variables_initializer())
         saver = tf.train.Saver()
         for epoch_i in range(epoch):
             num_batch = int(len(self.x) / batch_size)
             loss = 0
+            if epoch_i % 1000 is 0: 
+                saver.save(sess, "./models/model_{}_{}_{}_{}/model.ckpt".format(epoch_i, len(self.model.layers), self.normalize, self.mode))
             for batch_i in range(num_batch):
                 batch_start = batch_i * batch_size
                 batch_x = self.x[batch_start:batch_start + batch_size]
@@ -61,7 +64,7 @@ class Trainer:
                 loss += c
                 #print("#{} / {}".format(batch_i, num_batch))
             print("#{} : {}".format(epoch_i, loss))
-        saver.save(sess, "./models/model_{}_{}_{}/model.ckpt".format(epoch, len(self.model.layers), self.normalize))
+        saver.save(sess, "./models/model_{}_{}_{}_{}/model.ckpt".format(epoch, len(self.model.layers), self.normalize, self.mode))
 
 
 if __name__ == '__main__':

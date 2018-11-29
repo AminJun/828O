@@ -1,0 +1,17 @@
+2018-11-17 20:14:11.657599: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-11-17 20:14:14.244537: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:09:00.0
+totalMemory: 10.91GiB freeMemory: 10.75GiB
+2018-11-17 20:14:14.244570: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2018-11-17 20:14:14.412317: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-11-17 20:14:14.412357: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2018-11-17 20:14:14.412363: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2018-11-17 20:14:14.412585: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10400 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:09:00.0, compute capability: 6.1)
+2018-11-17 20:14:14.471966: W tensorflow/core/framework/allocator.cc:122] Allocation of 1792216360 exceeds 10% of system memory.
+2018-11-17 20:14:14.882007: W tensorflow/core/framework/allocator.cc:122] Allocation of 1792216360 exceeds 10% of system memory.
+2018-11-17 20:14:15.281331: W tensorflow/core/framework/allocator.cc:122] Allocation of 1792216360 exceeds 10% of system memory.
+2018-11-17 20:14:15.683779: W tensorflow/core/framework/allocator.cc:122] Allocation of 1792216360 exceeds 10% of system memory.
+2018-11-17 20:14:16.281013: W tensorflow/core/framework/allocator.cc:122] Allocation of 1792216360 exceeds 10% of system memory.
+/home/alishafahi/virtualenvironment/amin/lib/python3.5/site-packages/sklearn/utils/validation.py:590: DataConversionWarning: Data with input dtype object was converted to float64 by the scale function.
+  warnings.warn(msg, DataConversionWarning)
